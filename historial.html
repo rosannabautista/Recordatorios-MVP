@@ -14,6 +14,19 @@
     .btn-back {
       margin-top: 20px;
     }
+    .list-group-item {
+      display: flex;
+      align-items: center;
+    }
+    .recordatorio-text {
+      flex-grow: 1;
+    }
+    .btn-group {
+      margin-left: auto;
+    }
+    .btn-action {
+      margin-left: 5px;
+    }
   </style>
 </head>
 
@@ -22,10 +35,34 @@
     <h1>Historial de Recordatorios</h1>
 
     <ul class="list-group">
-      <li class="list-group-item">Recordatorio 1</li>
-      <li class="list-group-item">Recordatorio 2</li>
-      <li class="list-group-item">Recordatorio 3</li>
-      <li class="list-group-item">Recordatorio 4</li>
+      <li class="list-group-item">
+        <span class="recordatorio-text">Recordatorio 1</span>
+        <div class="btn-group" role="group">
+          <button class="btn btn-danger btn-action">Eliminar</button>
+          <button class="btn btn-primary btn-action">Editar</button>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <span class="recordatorio-text">Recordatorio 2</span>
+        <div class="btn-group" role="group">
+          <button class="btn btn-danger btn-action">Eliminar</button>
+          <button class="btn btn-primary btn-action">Editar</button>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <span class="recordatorio-text">Recordatorio 3</span>
+        <div class="btn-group" role="group">
+          <button class="btn btn-danger btn-action">Eliminar</button>
+          <button class="btn btn-primary btn-action">Editar</button>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <span class="recordatorio-text">Recordatorio 4</span>
+        <div class="btn-group" role="group">
+          <button class="btn btn-danger btn-action">Eliminar</button>
+          <button class="btn btn-primary btn-action">Editar</button>
+        </div>
+      </li>
     </ul>
 
     <button class="btn btn-primary btn-back" onclick="goBack()">Volver</button>
